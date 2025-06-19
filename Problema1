@@ -1,0 +1,15 @@
+temps = []
+for i in range(5):
+    tem = int(input(f"Ingrese su temperatura [{i+1}/5]: "))
+    temps.append(tem)
+prom = sum(temps)/len(temps)
+print(f"El promedio es: {prom}°C")
+t_max = max(temps)
+print(f"La temp. máx es: {t_max}")
+
+if  temps >= 15 or temps <= 30:
+    print("Sus temperaturas pasaron la verificación")
+else:
+    print("Sus temperaturas no han pasado la verificación")
+if temps <= 10 or temps >= 35:
+    print("||ADVERTENCIA|| TEMPERATURAS FUERA DE RANGO SOLICITADO! (10°C - 35°C)")

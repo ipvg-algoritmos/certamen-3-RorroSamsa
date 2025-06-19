@@ -1,0 +1,8 @@
+edad = int(input("Porfavor, ingrese su edad: "))
+super = int(input("Eres supervisor? (y/n): "))
+aut = int(input("Tienes autorizacaión? (y/n): "))
+
+if edad>=18 and (super == y or aut == y):
+    print("Acceso permitido")
+else:
+    print("Acceso denegado wajaja")
